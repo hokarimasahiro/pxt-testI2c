@@ -1,7 +1,7 @@
 //% weight=70 color=#1eb0f0 icon="\u3041" block="i2c"
 namespace testi2c {
 
-    //% shim=testi2c::test
+    //% shim=testi2c::testi2cc
     function testi2cc(n: number): number {
         return 0;
     }
