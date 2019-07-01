@@ -1,7 +1,7 @@
 #include "pxt.h"
 
 namespace testi2c {
-  uint32_t test(int32_t n)
+  uint32_t testi2cc(int32_t n)
   {
 	return 1;
   }

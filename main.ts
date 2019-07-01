@@ -2,7 +2,7 @@
 namespace testi2c {
 
     //% shim=testi2c::test
-    function test(n: number): number {
+    function testi2cc(n: number): number {
         return 0;
     }
     /**
@@ -11,6 +11,6 @@ namespace testi2c {
       */
     //% blockId=test_i2c_device block="test i2c device %ad"
     export function testi2c(ad: number): number {
-        return (test(ad));
+        return (testi2cc(ad));
     }
 }
