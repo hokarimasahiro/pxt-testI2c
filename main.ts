@@ -1,7 +1,7 @@
 //% weight=70 color=#1eb0f0 icon="\u3041" block="i2c"
-namespace i2c {
+namespace testi2c {
 
-    //% shim=i2c::test
+    //% shim=testi2c::test
     function test(n: number): number {
         return 0;
     }
@@ -10,7 +10,7 @@ namespace i2c {
       * @param ad i2c address, eg: 0x32
       */
     //% blockId=test_i2c_device block="test i2c device %ad"
-    export function testi2c(ad: number):number {
-        return(test(ad));
+    export function testi2c(ad: number): number {
+        return (test(ad));
     }
 }

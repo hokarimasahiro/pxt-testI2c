@@ -1,1 +1,1 @@
-basic.showNumber(i2c.testi2c(0x32))
+basic.showNumber(testi2c.testi2c(0x32))
