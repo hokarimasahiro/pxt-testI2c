@@ -3,11 +3,11 @@ namespace testi2c {
 
     //% shim=testi2c::testi2cr
     function testi2cr(n: number): number {
-        return 0;
+        return -1;
     }
     //% shim=testi2c::testi2cw
     function testi2cw(n: number): number {
-        return 0;
+        return -1;
     }
     /**
       * test read i2c device
