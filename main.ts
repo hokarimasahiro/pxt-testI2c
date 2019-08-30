@@ -1,4 +1,4 @@
-//% weight=70 color=#1eb0f0 icon="\uf0ad" block="i2c"
+//% weight=70 color=#1eb0f0 icon="\uf5de" block="i2c"
 namespace testi2c {
 
     //% shim=testi2c::testi2cr
