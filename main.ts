@@ -6,7 +6,7 @@ namespace testi2c {
         return -1;
     }
     //% shim=testi2c::testi2cw
-    function testi2cw(n: number,d:number): number {
+    function testi2cw(n: number): number {
         return -1;
     }
     /**
@@ -20,10 +20,9 @@ namespace testi2c {
     /**
       * test write i2c device
       * @param ad i2c address, eg: 0x32
-      * @param dt write data, eg: 0
       */
-    //% blockId=test_write_i2c_device block="test write i2c device %ad %dt"
-    export function testWriteI2c(ad: number,dt:number): number {
-        return (testi2cw(ad,dt));
+    //% blockId=test_write_i2c_device block="test write i2c device %ad"
+    export function testWriteI2c(ad: number): number {
+        return (testi2cw(ad));
     }
 }
