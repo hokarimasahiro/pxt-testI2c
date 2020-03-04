@@ -20,8 +20,9 @@ namespace testi2c {
     /**
       * test write i2c device
       * @param ad i2c address, eg: 0x32
+      * @param dt write data, eg: 0
       */
-    //% blockId=test_write_i2c_device block="test write i2c device %ad"
+    //% blockId=test_write_i2c_device block="test write i2c device %ad %dt"
     export function testWriteI2c(ad: number,dt:number): number {
         return (testi2cw(ad,dt));
     }
