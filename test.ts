@@ -57,6 +57,6 @@ basic.forever(function () {
     L += 1
     if (L > 15) {
         L = 0
-        basic.pause(1000)
+        basic.pause(10)
     }
 })
