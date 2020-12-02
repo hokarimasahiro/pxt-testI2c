@@ -3,20 +3,17 @@
     "version": "0.0.0",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
-        "testi2c.cpp",
+        "README.md",
+        "main.ts",
         "shims.d.ts",
-        "enums.d.ts"
+        "testi2c.cpp"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": false,
-    "supportedTargets": [
-        "microbit"
-    ],
     "preferredEditor": "tsprj"
 }
