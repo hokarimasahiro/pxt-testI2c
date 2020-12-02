@@ -9,8 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "shims.d.ts",
-        "testi2c.cpp"
+        "testi2c.cpp",
+        "shims.d.ts"
     ],
     "testFiles": [
         "test.ts"
