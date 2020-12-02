@@ -44,7 +44,7 @@ basic.forever(function () {
         RC = -1
     } else {
         if (RW == 0) {
-            RC = testi2c.testReadI2c(H * 16 + L)
+//            RC = testi2c.testReadI2c(H * 16 + L)
         } else {
             RC = testi2c.testWriteI2c(H * 16 + L)
         }
