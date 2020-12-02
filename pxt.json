@@ -7,8 +7,9 @@
         "microphone": "*"
     },
     "files": [
-        "main.ts",
-        "testi2c.cpp"
+        "testi2c.cpp",
+        "shims.d.ts",
+        "enums.d.ts"
     ],
     "testFiles": [
         "test.ts"
