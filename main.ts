@@ -14,7 +14,7 @@ namespace testi2c {
       * @param ad i2c address, eg: 0x32
       */
     //% blockId=test_read_i2c_device block="test read i2c device %ad"
-    export function testReadI2c(ad: number): number {
+    export function testRead(ad: number): number {
         return (testi2cr(ad));
     }
     /**
@@ -22,7 +22,7 @@ namespace testi2c {
       * @param ad i2c address, eg: 0x32
       */
     //% blockId=test_write_i2c_device block="test write i2c device %ad"
-    export function testWriteI2c(ad: number): number {
+    export function testWrite(ad: number): number {
         return (testi2cw(ad));
     }
 }
