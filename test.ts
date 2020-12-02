@@ -44,9 +44,9 @@ basic.forever(function () {
         RC = -1
     } else {
         if (RW == 0) {
-            RC = testi2c.testRead(H * 16 + L)
+            RC = testi2c.testReadI2c(H * 16 + L)
         } else {
-            RC = testi2c.testWrite(H * 16 + L)
+            RC = testi2c.testWriteI2c(H * 16 + L)
         }
         if (RC == 0) {
             led.plotBrightness(X, Y, 255)
@@ -57,6 +57,6 @@ basic.forever(function () {
     L += 1
     if (L > 15) {
         L = 0
-        basic.pause(10)
+        basic.pause(1000)
     }
 })
