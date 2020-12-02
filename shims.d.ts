@@ -10,14 +10,14 @@ declare namespace testi2c {
      * @param ad i2c address, eg: 0x32
      */
     //% blockId=test_read_i2c_device block="test read i2c device %ad" shim=testi2c::testRead
-    function testReadI2c(ad: int32): uint32;
+    function testRead(ad: int32): uint32;
 
     /**
      * test write i2c device
      * @param ad i2c address, eg: 0x32
      */
     //% blockId=test_write_i2c_device block="test write i2c device %ad" shim=testi2c::testWrite
-    function testWriteI2c(ad: int32): uint32;
+    function testWrite(ad: int32): uint32;
 }
 
 // Auto-generated. Do not edit. Really.
