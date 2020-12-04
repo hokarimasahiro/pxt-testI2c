@@ -1,4 +1,10 @@
 #include "pxt.h"
+#if MICROBIT_CODAL
+#include "Pin.h"
+#define PinCompat codal::Pin
+#else
+#define PinCompat MicroBitPin
+#endif
 
 namespace testi2c {
 //%
