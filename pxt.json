@@ -4,7 +4,8 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "pxt-logic": "github:hokarimasahiro/pxt-logic#d30c6c49e05c1c5dc4f2439db19b59fce7dfd83f"
     },
     "files": [
         "README.md",
