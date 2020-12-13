@@ -20,7 +20,7 @@ namespace testi2c {
     //% shim=testi2c::testi2cw
     export function testWrite(ad: number): number {
         basic.pause(50);
-        if(ad>>4==(ad & 0xf)) return (0);
+        if(ad>>4==((ad & 0xf)-2)) return (0);
         else return (-1);
     }
 }
