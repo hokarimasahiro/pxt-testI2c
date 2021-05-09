@@ -10,19 +10,12 @@ function 上位表示 (HAD: number) {
     if (logic.bittest(HAD, 2)) {
         led.plot(2, 0)
     }
-    if (RW == 1) {
-        led.plot(0, 0)
-    }
 }
 input.onButtonPressed(Button.A, function () {
     H += -1
     if (H < 0) {
         H = 7
     }
-    上位表示(H)
-})
-input.onButtonPressed(Button.AB, function () {
-    RW = 1 - RW
     上位表示(H)
 })
 input.onButtonPressed(Button.B, function () {
@@ -35,12 +28,8 @@ input.onButtonPressed(Button.B, function () {
 let RC = 0
 let X = 0
 let Y = 0
-let RW = 0
 let L = 0
 let H = 0
-H = 0
-L = 8
-RW = 0
 上位表示(H)
 basic.forever(function () {
     Y = logic.rshift(L, 2) + 1
@@ -49,11 +38,7 @@ basic.forever(function () {
     if (H == 0 && L <= 0 || H == 7 && L >= 15) {
         RC = -1
     } else {
-        if (RW == 0) {
             RC = testi2c.testRead(H * 16 + L)
-        } else {
-            RC = testi2c.testWrite(H * 16 + L)
-        }
         if (RC == 0) {
             led.plotBrightness(X, Y, 255)
         } else {

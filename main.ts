@@ -13,16 +13,4 @@ namespace testi2c {
         }
         return (-1);
     }
-    /**
-      * test write i2c device
-      * @param ad i2c address, eg: 0x32
-      */
-    //% blockId=test_write_i2c_device block="test write i2c device %ad"
-    export function testWrite(ad: number): number {
-        let buf=pins.i2cReadBuffer(ad, 8)
-        for (let i=0;i<8;i++){
-            if(buf[i]>0) return (0);
-        }
-        return (-1);
-    }
 }
