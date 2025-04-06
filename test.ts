@@ -7,7 +7,7 @@ function upperDisp (HAD: number) {
     if (HAD & 0x02) {
         led.plot(3, 0)
     }
-    if (HAD & 0x40) {
+    if (HAD & 0x04) {
         led.plot(2, 0)
     }
 }
